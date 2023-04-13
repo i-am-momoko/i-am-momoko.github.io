@@ -1,0 +1,210 @@
+* {
+  margin: 0;
+}
+
+body {
+  border: solid 10px black;
+  margin: 20px;
+  color: black;
+  font-family: "Noto Sans JP", sans-serif;
+  font-family: "Questrial", sans-serif;
+}
+
+h1 {
+  text-align: left;
+  font-size: 150px;
+  text-shadow: 8px 8px 0px silver;
+  padding: 50px 50px 150px 50px;
+}
+
+h2 {
+  font-size: 100px;
+  text-shadow: 4px 4px 0px silver;
+  text-align: center;
+}
+
+h2::first-letter {
+  color: deepskyblue;
+}
+
+h2:nth-child(2) {
+  padding-bottom: 150px;
+}
+
+h3 {
+  padding: 100px 0 50px 0;
+  font-size: 75px;
+  text-align: center;
+  text-shadow: 3px 3px 0px silver;
+}
+
+h3::first-letter {
+  color: deepskyblue;
+}
+
+h3 + p {
+  font-size: 50px;
+  text-align: center;
+}
+
+h4 {
+  font-size: 50px;
+}
+
+.sns {
+  text-align: center;
+  padding-bottom: 40px;
+}
+
+footer {
+  text-align: center;
+  padding-bottom: 10px;
+  font-size: 20px;
+  font-weight: bold;
+}
+
+/*以下、アイコンのcss*/
+
+.flex {
+  display: flex; /*横並び*/
+}
+
+.flex .image {
+  width: 50%; /*画像サイズ指定*/
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  position: relative;
+}
+
+.flex .text {
+  padding: 40px 40px 40px 0;
+  font-size: 2vmax;
+}
+
+/* 画像を天地中央表示 */
+
+.flex .image {
+  overflow: hidden;
+  position: relative;
+}
+
+.flex .image::before {
+  content: "";
+  display: block;
+  padding-top: 58%;
+}
+
+.flex .image img {
+  width: 50%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  margin: auto;
+  border-radius: 50%;
+}
+
+/*以下、モーダルウィンドウのcss.いつかモーダルだけのcssにまとめます*/
+
+.modal {
+  text-align: center;
+}
+
+.modal img {
+  box-sizing: border-box;
+  background: rgba(0, 191, 255, 0.2);
+  padding: 20px;
+  margin: 20px;
+}
+
+.modal img:hover {
+  background-color: deepskyblue;
+}
+
+.modal-wrapper {
+  z-index: 999;
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  padding: 40px 10px;
+  text-align: center;
+}
+
+.modal-wrapper:not(:target) {
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity 0.3s, visibility 0.3s;
+}
+
+.modal-wrapper:target {
+  opacity: 1;
+  visibility: visible;
+  transition: opacity 0.4s, visibility 0.4s;
+}
+
+.modal-wrapper::after {
+  display: inline-block;
+  height: 100%;
+  margin-left: -0.05em;
+  vertical-align: middle;
+  content: "";
+}
+
+.modal-wrapper .modal-window {
+  box-sizing: border-box;
+  display: inline-block;
+  z-index: 20;
+  position: relative;
+  width: 70%;
+  max-width: 600px;
+  padding: 30px 30px 15px;
+  border-radius: 2px;
+  background: whitesmoke;
+  box-shadow: 0 0 30px rgba(0, 0, 0, 0.5);
+  vertical-align: middle;
+}
+
+.modal-wrapper .modal-window .modal-content {
+  max-height: 80vh;
+  overflow-y: auto;
+  text-align: left;
+  font-size: 30px;
+}
+
+.modal-overlay {
+  z-index: 10;
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background: rgba(0, 0, 0, 0.8);
+}
+
+.modal-wrapper .modal-close {
+  z-index: 20;
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 35px;
+  color: silver !important;
+  font-size: 50px;
+  font-weight: 700;
+  line-height: 35px;
+  text-align: center;
+  text-decoration: none;
+  text-indent: 0;
+}
+
+.modal-wrapper .modal-close:hover {
+  color: #2b2e38 !important;
+}
+
+/*以下、スマートフォンのサイズ設定*/
+
+@media screen and (min-width: 520px) {
+}
