@@ -103,6 +103,3 @@ ul li a:hover {
 #menu-btn:checked ~ .menu-content {
   top: 0; /*メニューを画面内へ動かす*/
 }
-
-@media screen and (min-width: 520px) {
-}
