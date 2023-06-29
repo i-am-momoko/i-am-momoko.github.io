@@ -208,7 +208,7 @@ ul li a:hover {
 
 /*以下、ローディング直後の画面*/
 
-/*.container {
+.container {
   position: fixed;
   display: flex;
   justify-content: center;
