@@ -18,3 +18,15 @@ function cancelExecution() {
   // フローティングテキスト要素を非表示にする
   floatingText.style.display = "none";
 }
+
+//ニュースティッカー
+
+var ticker = document.getElementById("news");
+var newsItems = ticker.getElementsByTagName("li");
+var currentIndex = 0;
+
+setInterval(function () {
+  newsItems[currentIndex].style.display = "none";
+  currentIndex = (currentIndex + 1) % newsItems.length;
+  newsItems[currentIndex].style.display = "block";
+}, 3000);
