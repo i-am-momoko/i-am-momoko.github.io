@@ -1,0 +1,146 @@
+/* ページ全体のスタイル */
+body {
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+  margin: 0px;
+  padding: 0px;
+  text-align: center;
+  color: white;
+  background-color: cornflowerblue;
+  font-size: 20px;
+}
+
+main {
+  width: 1000px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+h1 {
+  padding: 20px 0;
+  margin-left: 100px;
+  text-align: left;
+  color: white;
+}
+
+h2 {
+  text-align: left;
+  margin-left: 100px;
+  color: darkslateblue;
+}
+
+p {
+  text-align: left;
+  width: 600px;
+  margin: 25px 100px;
+}
+
+ul {
+  padding-left: 0;
+  color: antiquewhite;
+  list-style: none;
+}
+
+#photo {
+  float: right;
+  padding-right: 50px;
+  width: 220px;
+}
+
+#contentsvideo {
+  list-style-type: none;
+  margin: 16px auto;
+  text-align: left;
+  padding-left: 50px;
+}
+
+.contentsli1 {
+  text-align: left;
+  list-style-type: none;
+}
+
+#contentsli1 a {
+  font-size: larger;
+  color: yellow;
+}
+
+#contentsli1 a:hover {
+  color: deeppink;
+}
+
+.contentsli2 {
+  text-align: left;
+  list-style-type: none;
+}
+
+.contentsli3 {
+  text-align: left;
+  list-style-type: none;
+}
+
+hr {
+  background-color: blue;
+  height: 1px;
+}
+
+#top {
+  text-align: left;
+  color: yellow;
+}
+
+#menu {
+  display: flex;
+}
+
+img {
+  justify-content: space-around;
+  padding-left: 50px;
+  text-align: left;
+  list-style: none;
+  width: 30%;
+}
+
+nav ul {
+  display: flex;
+  list-style-type: none;
+  padding: 300px 100px 100px 100px;
+}
+
+nav ul li {
+  background-color: darkslateblue;
+  font-size: 50px;
+  padding: 10px 20px;
+  margin-bottom: 10px;
+  margin-left: 20px;
+  line-height: 50px;
+  height: 50px;
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  color: antiquewhite;
+}
+
+a:hover {
+  color: deeppink;
+}
+
+@media screen and (min-width: 521px) and (max-width: 960px) {
+  nav ul {
+    display: flex;
+    list-style-type: none;
+    padding: 100px 60px 0px 60px;
+  }
+
+  nav ul li {
+    background-color: darkslateblue;
+    padding: 10px 20px;
+    font-size: 15px;
+    margin-bottom: 10px;
+    margin-left: 20px;
+    line-height: 50px;
+    height: 50px;
+    list-style: none;
+  }
+}
